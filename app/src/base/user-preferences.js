@@ -100,7 +100,7 @@ const preferences = {
   updateNotification: {
     type: 'boolean',
     name: 'Show update notifications',
-    description: 'Notify about TrackVisor Desktop updates available on launch',
+    description: 'Notify about Cattr Desktop updates available on launch',
     default: true,
     frontend: {
       element: 'toggle',
@@ -111,7 +111,7 @@ const preferences = {
   usageStatistics: {
     type: 'boolean',
     name: 'Send usage statistics',
-    description: 'Share usage statistics with TrackVisor Developers. Statistics include only versions of TrackVisor Desktop, Operating System, and backend installation ID. We don\'t collect any personal data, and all collected statistics will be used only to better understand how we can improve the desktop application experience.',
+    description: 'Share usage statistics with Cattr Developers. Statistics include only versions of Cattr Desktop, Operating System, and backend installation ID. We don\'t collect any personal data, and all collected statistics will be used only to better understand how we can improve the desktop application experience.',
     default: true,
     frontend: {
       element: 'toggle',
@@ -122,7 +122,7 @@ const preferences = {
   errorReporting: {
     type: 'boolean',
     name: 'Share error reports',
-    description: 'When an error occurs, TrackVisor Desktop will send an anonymized report to the development team with details concerning that error. Application restart is required to apply the new sharing policy.',
+    description: 'When an error occurs, Cattr Desktop will send an anonymized report to the development team with details concerning that error. Application restart is required to apply the new sharing policy.',
     default: true,
     frontend: {
       element: 'toggle',

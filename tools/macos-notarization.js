@@ -3,14 +3,14 @@ const path = require('path');
 const debug = require('debug');
 require('dotenv').config();
 
-debug.enable('trackvisor:notarization');
-const log = debug('trackvisor:notarization');
+debug.enable('cattr:notarization');
+const log = debug('cattr:notarization');
 
 /**
  * Application ID
  * @type {String}
  */
-const appId = 'app.trackvisor';
+const appId = 'app.cattr';
 
 module.exports = async params => {
 

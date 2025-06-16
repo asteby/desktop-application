@@ -143,7 +143,7 @@ export default {
 
     this.$store.dispatch('showLoader');
     if (this.$i18n.locale === 'ru')
-      document.title = this.$t('TrackVisor');
+      document.title = this.$t('Cattr');
 
     const auth = await this.$ipc.request('auth/is-authentication-required', {});
     this.$store.commit('setAuthenticatedStatus', !auth.body.required);
@@ -280,7 +280,7 @@ export default {
     displayTrackingFeatures: debounce(async function (features, updated = false) {
 
       let content = `<p>${this.$t(
-          'TrackVisor tracking settings were updated:'
+          'Cattr tracking settings were updated:'
       )}</p><ol>`;
       features.forEach(f => {
 

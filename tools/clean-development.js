@@ -3,7 +3,7 @@ const { app } = require('electron');
 const keytar = require('keytar');
 const rimraf = require('./rimraf');
 
-const appId = 'trackvisor-develop';
+const appId = 'cattr-develop';
 
 (async () => {
 

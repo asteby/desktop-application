@@ -72,7 +72,7 @@ const fetchCompanyIdentifier = async () => {
 module.exports.getSSOFromProtocol = args => {
 
   // Trying to extract SSO URL by protocol+action preamble
-  let ssoUrl = Array.from(args || process.argv).filter(arg => arg.indexOf('trackvisor://authenticate') === 0);
+  let ssoUrl = Array.from(args || process.argv).filter(arg => arg.indexOf('cattr://authenticate') === 0);
   if (!ssoUrl || ssoUrl.length === 0)
     return null;
 
@@ -102,8 +102,8 @@ module.exports.getSSOFromProtocol = args => {
 };
 
 /**
- * Checks is this is TrackVisor API instance
- * @return {Promise<Boolean>} True, if it's working TrackVisor instance, False otherwise
+ * Checks is this is Cattr API instance
+ * @return {Promise<Boolean>} True, if it's working Cattr instance, False otherwise
  */
 module.exports.isCattrInstance = async () => {
 
@@ -431,8 +431,8 @@ module.exports.setHostname = async (hostname, force = false) => {
     if (error.isApiError && error.statusCode === 404) {
 
       // Log it
-      log.error('TrackVisor is not found on this hostname', error);
-      throw new UIError(404, 'TrackVisor is not found on this hostname', 'EAUTH404', error);
+      log.error('Cattr is not found on this hostname', error);
+      throw new UIError(404, 'Cattr is not found on this hostname', 'EAUTH404', error);
 
     }
 

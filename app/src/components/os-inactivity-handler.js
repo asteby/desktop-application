@@ -26,7 +26,7 @@ class OsInactivityHandler {
         if (!this._macInactivityNotify) {
 
           this._macInactivityNotify = new Notification({
-            title: translation.translate('TrackVisor'),
+            title: translation.translate('Cattr'),
             body: translation.translate('Are you still working?'),
             silent: false,
             hasReply: false,
@@ -89,7 +89,7 @@ class OsInactivityHandler {
         if (!result) {
 
           const notify = new Notification({
-            title: translation.translate('TrackVisor'),
+            title: translation.translate('Cattr'),
             body: translation.translate('Tracker was stopped due to inactivity!'),
             silent: false,
             hasReply: false,

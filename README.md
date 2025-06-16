@@ -1,6 +1,6 @@
-TrackVisor Desktop App  
+Cattr Desktop App  
 ==========
-Electron desktop application for TrackVisor  
+Electron desktop application for Cattr  
 
 Minimum system requirements to build the app
 - MacOS: Monterey 12.3.1  
