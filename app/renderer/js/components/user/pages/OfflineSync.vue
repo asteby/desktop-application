@@ -17,12 +17,12 @@
             :on-change="handleChange"
             :on-remove="handleRemove"
             :file-list="fileList"
-            accept=".cattr">
+            accept=".trackvisor">
           <el-button slot="trigger" size="small" type="primary">{{ $t('Select file') }}</el-button>
           <el-button size="small" type="success" :disabled="fileList.length === 0" @click="importProjectsAndTasks">
             {{ $t('Import') }}
           </el-button>
-          <div class="el-upload__tip" slot="tip">{{ $t('only .cattr files are accepted') }}</div>
+          <div class="el-upload__tip" slot="tip">{{ $t('only .trackvisor files are accepted') }}</div>
         </el-upload>
       </el-row>
       <el-row class="section">
@@ -125,7 +125,7 @@ export default {
       this.$refs.tasks_file_input.abort()
       const file = this.$refs.tasks_file_input.$el.querySelector('input').files[0];
 
-      if (!file.name.endsWith('.cattr')) {
+      if (!file.name.endsWith('.trackvisor')) {
         return await this.showAlert(this.$t("Wrong format"), this.$t('Import error'));
       }
 
@@ -255,7 +255,7 @@ export default {
             }
 
             const aElement = document.createElement('a');
-            aElement.setAttribute('download', 'Intervals.cattr');
+            aElement.setAttribute('download', 'Intervals.trackvisor');
             const href = URL.createObjectURL(new Blob([data]));
             aElement.href = href;
             aElement.setAttribute('target', '_blank');
@@ -279,7 +279,7 @@ export default {
       if (screenshotsArchiveRes.code === 200) {
         try {
             const aElement = document.createElement('a');
-            aElement.setAttribute('download', 'Screenshots.cattr');
+            aElement.setAttribute('download', 'Screenshots.trackvisor');
             const href = URL.createObjectURL(new Blob([screenshotsArchiveRes.body]));
             aElement.href = href;
             aElement.setAttribute('target', '_blank');

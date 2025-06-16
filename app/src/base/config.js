@@ -16,10 +16,10 @@ const isDeveloperModeEnabled = (
  * Identifier of the package used in the filesystem and keychain
  * @type {String}
  */
-const packageId = isDeveloperModeEnabled ? 'cattr-develop' : 'cattr';
+const packageId = isDeveloperModeEnabled ? 'trackvisor-develop' : 'trackvisor';
 
 /**
- * Version of this Cattr package
+ * Version of this TrackVisor package
  * @type {String}
  */
 const packageVersion = packageManifest.version;
@@ -54,7 +54,7 @@ configuration.sentry = {
   dsnFrontend: 'https://00bd1ee1db824310812252bb96e96945@sentry.amazingcat.net/14',
 
   // Setting the current release
-  release: `cattr@${packageVersion}`,
+  release: `trackvisor@${packageVersion}`,
 
 };
 
@@ -121,7 +121,7 @@ configuration.usageStatistics = {
   /**
    * Base URL of statistics collector
    */
-  collectorUrl: 'https://stats.cattr.app',
+  collectorUrl: 'https://stats.trackvisor.app',
 
 };
 
@@ -145,7 +145,7 @@ configuration.updateNotification = {
    * URL to downloads page
    * @type {String}
    */
-  downloadsPageUrl: 'https://cattr.app/desktop',
+  downloadsPageUrl: 'https://trackvisor.app/desktop',
 
 };
 

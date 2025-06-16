@@ -21,7 +21,7 @@ const setMacDockIcon = icon => {
 };
 
 const tray = new Tray(ICONS_PATHS.tray.LOADING);
-tray.setToolTip('Cattr');
+tray.setToolTip('TrackVisor');
 setMacDockIcon(ICONS_PATHS.dock.LOADING);
 
 let selectedTaskId = null;

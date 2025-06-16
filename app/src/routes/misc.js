@@ -78,7 +78,7 @@ module.exports = router => {
       }
     } else if (!key && OfflineMode.enabled) {
       return req.send(500, {
-        message: `In order to export intervals, Cattr client app needs to fetch encryption keys from the server first.`,
+        message: `In order to export intervals, TrackVisor client app needs to fetch encryption keys from the server first.`,
       });
     }
 

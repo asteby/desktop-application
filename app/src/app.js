@@ -36,7 +36,7 @@ if (!config.isDeveloperModeEnabled) {
 }
 
 // Register custom protocol for SSO
-app.setAsDefaultProtocolClient('cattr');
+app.setAsDefaultProtocolClient('trackvisor');
 
 // Wait until Electron comes ready
 app.once('ready', async () => {

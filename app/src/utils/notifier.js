@@ -73,7 +73,7 @@ const showSystemNotification = async (screenshot, interval) => {
     hasReply: false,
     urgency: 'normal',
     timeoutType: 'default',
-    title: translation.translate('Cattr'),
+    title: translation.translate('TrackVisor'),
     icon: nativeImage.createFromBuffer(screenshot),
     closeButtonText: translation.translate('Close'),
     body: translation.translate('Screenshot captured'),
@@ -97,7 +97,7 @@ const showSystemNotification = async (screenshot, interval) => {
       const removalNotification = new Notification({
         silent: true,
         hasReply: false,
-        title: translation.translate('Cattr'),
+        title: translation.translate('TrackVisor'),
         icon: nativeImage.createFromBuffer(screenshot),
         closeButtonText: translation.translate('Close'),
         body: translation.translate('Screenshot deleted!'),

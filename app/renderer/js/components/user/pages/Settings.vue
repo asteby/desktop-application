@@ -67,7 +67,7 @@
       </el-button>
       <br><br>
       <small style="color: #999">
-        Cattr {{ version.number }} 💖 
+        TrackVisor {{ version.number }} 💖 
         <br>
         {{ version.devMode ? '+dev ' : '' }}
         {{ version.sentry ? '+sentry' : '' }}

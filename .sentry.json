@@ -2,9 +2,9 @@
   "url": "https://sentry.amazingcat.net",
   "org": "amazingcat",
   "frontend": {
-    "project": "cattr-desktop-vue"
+    "project": "trackvisor-desktop-vue"
   },
   "backend": {
-    "project": "cattr-desktop-electron"
+    "project": "trackvisor-desktop-electron"
   }
 }
