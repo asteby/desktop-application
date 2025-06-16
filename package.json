@@ -1,7 +1,7 @@
 {
 	"name": "cattr",
 	"version": "1.0.1",
-	"description": "Desktop client for Cattr",
+	"description": "Desktop client for TrackVisor",
 	"homepage": "https://cattr.app",
 	"main": "app/src/app.js",
 	"scripts": {
@@ -29,7 +29,7 @@
 	"build": {
 		"appId": "app.cattr",
 		"artifactName": "Cattr.${ext}",
-		"productName": "Cattr",
+		"productName": "TrackVisor",
 		"protocols": [
 			{
 				"name": "Cattr SSO protocol",
@@ -75,7 +75,7 @@
 			"target": "AppImage",
 			"category": "Office",
 			"desktop": {
-				"Name": "Cattr",
+				"Name": "TrackVisor",
 				"Terminal": "false",
 				"Type": "Application",
 				"Keywords": "time;tracker;cattr;tracking;",
@@ -89,11 +89,11 @@
 		"nsis": {
 			"oneClick": false,
 			"perMachine": false,
-			"artifactName": "Cattr_Setup.${ext}"
+			"artifactName": "TrackVisor_Setup.${ext}"
 		},
 		"appx": {
 			"identityName": "AmazingcatLLC.Cattr",
-			"displayName": "Cattr",
+			"displayName": "TrackVisor",
 			"publisher": "CN=3CE10A6B-6A65-461A-A33A-E6AD2673F412",
 			"publisherDisplayName": "amazingcat LLC",
 			"languages": [

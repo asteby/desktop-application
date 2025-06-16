@@ -1,6 +1,6 @@
 <template>
   <div class="login-container">
-    <h1>Cattr</h1>
+    <h1>TrackVisor</h1>
     <el-card
       ref="card"
       class="box-card login"
